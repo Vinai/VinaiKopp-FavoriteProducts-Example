@@ -9,10 +9,12 @@ This module is **NOT intended for production**!
 
 This repository contains two versions of the module.
 
-* The version marked with the git tag **start** is the module without dynamic content.
+* The version marked with the git tag [**start**](https://github.com/Vinai/VinaiKopp-FavoriteProducts-Example/tree/start)
+  is the module without dynamic content.
   This version simply uses a hardcoded list of favorite product SKUs.
 
-* The version marked with the git tag **complete** represents the module with
+* The version marked with the git tag [**complete**](https://github.com/Vinai/VinaiKopp-FavoriteProducts-Example/tree/complete)
+  represents the module with
   proper hole punching logic in place.
   
 For further questions feel free to ping me at https://twitter.com/VinaiKopp
