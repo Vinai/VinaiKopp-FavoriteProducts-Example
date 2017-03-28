@@ -1,8 +1,10 @@
-define(['jquery'], function ($) {
+define(['jquery', 'Magento_Customer/js/customer-data'], function ($, customer_data) {
     "use strict";
     
+    const section_name = 'vinaikopp_favoriteproducts';
     var favoriteSkus = function () {
-        return ['24-WB05', '24-MB01'];
+        const favorites = customer_data.get(section_name);
+        return favorites().skus || [];
     };
     
     var isFavorite = function (sku) {
@@ -15,7 +17,8 @@ define(['jquery'], function ($) {
             return function() {
                 const url = config.update_url + sku;
                 if (isFavorite(sku)) {
-                    $.ajax(url, {method: 'DELETE'});
+                    customer_data.invalidate([section_name]);
+                    $.ajax(url, {method: 'DELETE'}).done(function() {customer_data.reload([section_name], true);});
                 } else {
                     $.ajax(url, {method: 'POST'});
                 }
