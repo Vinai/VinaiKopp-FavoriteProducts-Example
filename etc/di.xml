@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="VinaiKopp\FavoriteProducts\Model\FavoriteProductsSession">
+        <arguments>
+            <argument name="storage" xsi:type="object">VinaiKopp\FavoriteProducts\Model\FavoritesSessionStorage\Virtual</argument>
+        </arguments>
+    </type>
+    <virtualType name="VinaiKopp\FavoriteProducts\Model\FavoritesSessionStorage\Virtual" type="Magento\Framework\Session\Storage">
+        <arguments>
+            <argument name="namespace" xsi:type="string">vinaikopp_favoriteproducts</argument>
+        </arguments>
+    </virtualType>
+    <preference for="VinaiKopp\FavoriteProducts\Api\FavoriteProductsRepositoryInterface" type="VinaiKopp\FavoriteProducts\Model\FavoriteProductsRepository"/>
+</config>
