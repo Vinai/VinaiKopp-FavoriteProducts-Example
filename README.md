@@ -21,4 +21,5 @@ For further questions feel free to ping me at https://twitter.com/VinaiKopp
 
 *Licence:* BSD-3-Clause  
 *Author:* Vinai Kopp  
-*Copyright:* Vinai Kopp 2017
+*Copyright:* Vinai Kopp 2017  
+*Website:* [http://vinaikopp.com/](http://vinaikopp.com/)  
