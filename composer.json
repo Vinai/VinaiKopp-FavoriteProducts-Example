@@ -5,7 +5,7 @@
     "php": "^7.0.0",
     "magento/framework": "100.1.*",
     "magento/module-catalog": "101.0.*",
-    "magento/customer": "100.1.*"
+    "magento/module-customer": "100.1.*"
   },
   "type": "magento2-module",
   "license": [
