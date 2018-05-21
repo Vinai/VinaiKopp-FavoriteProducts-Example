@@ -4,12 +4,13 @@ declare(strict_types = 1);
 
 namespace VinaiKopp\FavoriteProducts\Model;
 
+use PHPUnit\Framework\TestCase;
 use VinaiKopp\FavoriteProducts\Api\FavoriteProductsRepositoryInterface;
 
 /**
  * @covers \VinaiKopp\FavoriteProducts\Model\FavoriteProductsRepositoryTest
  */
-class FavoriteProductsRepositoryTest extends \PHPUnit_Framework_TestCase
+class FavoriteProductsRepositoryTest extends TestCase
 {
     /**
      * @var FavoriteProductsSession|\PHPUnit_Framework_MockObject_MockObject

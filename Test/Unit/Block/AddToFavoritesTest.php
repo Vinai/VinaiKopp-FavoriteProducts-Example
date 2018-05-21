@@ -8,11 +8,12 @@ use Magento\Catalog\Block\Product\AwareInterface as ProductAwareInterface;
 use Magento\Framework\UrlInterface as UrlBuilder;
 use Magento\Framework\View\Element\Template;
 use Magento\Framework\View\Element\Template\Context as TemplateContext;
+use PHPUnit\Framework\TestCase;
 
 /**
  * @covers \VinaiKopp\FavoriteProducts\Block\AddToFavoritesTest
  */
-class AddToFavoritesTest extends \PHPUnit_Framework_TestCase
+class AddToFavoritesTest extends TestCase
 {
     /**
      * @var UrlBuilder|\PHPUnit_Framework_MockObject_MockObject
@@ -32,7 +33,7 @@ class AddToFavoritesTest extends \PHPUnit_Framework_TestCase
 
     protected function setUp()
     {
-        $this->mockUrlBuilder = $this->getMock(UrlBuilder::class);
+        $this->mockUrlBuilder = $this->createMock(UrlBuilder::class);
     }
 
     public function testExtendsTemplateBlock()
