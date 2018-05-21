@@ -7,9 +7,10 @@ namespace VinaiKopp\FavoriteProducts;
 use Magento\Framework\ObjectManager\ConfigInterface as ObjectManagerConfig;
 use Magento\Framework\Session\Storage as SessionStorage;
 use Magento\TestFramework\ObjectManager;
+use PHPUnit\Framework\TestCase;
 use VinaiKopp\FavoriteProducts\Model\FavoriteProductsSession;
 
-class FavoritesSessionStorageDiConfigTest extends \PHPUnit_Framework_TestCase
+class FavoritesSessionStorageDiConfigTest extends TestCase
 {
     private $storageVirtualType = Model\FavoritesSessionStorage\Virtual::class;
 

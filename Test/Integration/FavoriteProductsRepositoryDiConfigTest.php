@@ -6,8 +6,9 @@ namespace VinaiKopp\FavoriteProducts;
 
 use Magento\Framework\ObjectManager\ConfigInterface as ObjectManagerConfig;
 use Magento\TestFramework\ObjectManager;
+use PHPUnit\Framework\TestCase;
 
-class FavoriteProductsRepositoryDiConfigTest extends \PHPUnit_Framework_TestCase
+class FavoriteProductsRepositoryDiConfigTest extends TestCase
 {
     private $instanceType = Api\FavoriteProductsRepositoryInterface::class;
 
