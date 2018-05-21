@@ -21,8 +21,8 @@ declare(strict_types = 1);
 </script>
 <span data-bind="scope: 'vinaikopp-favorites-addto'">
     <a href="#" data-bind="
-    click: select('<?= $block->escapeJsQuote($block->getProductSku()) ?>'),
-    text: isFavorite('<?= $block->escapeJsQuote($block->getProductSku()) ?>') ?
+    click: select('<?= $block->escapeJs($block->getProductSku()) ?>'),
+    text: isFavorite('<?= $block->escapeJs($block->getProductSku()) ?>') ?
         '<?= __('Unfavorite!') ?>' :
-        '<?= __('Favorite!') ?>'"><?= __('Foo') ?></a>
+        '<?= __('Favorite!') ?>'"></a>
 </span>
