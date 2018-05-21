@@ -1,10 +1,8 @@
-define(['jquery', 'Magento_Customer/js/customer-data'], function ($, customer_data) {
+define(['jquery'], function ($) {
     'use strict';
     
-    const section_name = 'vinaikopp_favoriteproducts';
     const favoriteSkus = function () {
-        const favorites = customer_data.get(section_name);
-        return favorites().skus || [];
+        return ['24-WB05', '24-MB01'];
     };
     
     const isFavorite = function (sku) {
